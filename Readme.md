@@ -1,5 +1,7 @@
 ### Если на одном ПК стоит и виндовс и линукс, и время в винде постоянно меняется на гринвич.
 Чтобы Линукс не переводил часы на «+0», делаем
-  #timedatectl set-local-rtc 1
+
+   timedatectl set-local-rtc 1
 и если вдруг нужно будет вернуть все назад
-  #timedatectl set-local-rtc 0
+
+   timedatectl set-local-rtc 0
