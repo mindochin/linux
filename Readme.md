@@ -2,6 +2,7 @@
 Чтобы Линукс не переводил часы на «+0», делаем
 
    timedatectl set-local-rtc 1
+   
 и если вдруг нужно будет вернуть все назад
 
    timedatectl set-local-rtc 0
