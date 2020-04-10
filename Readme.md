@@ -7,3 +7,5 @@ timedatectl set-local-rtc 1
 ```
 timedatectl set-local-rtc 0
 ```
+#### Изменить время выбора системы или ядра при загрузке
+ищем `/etc/default/grub` меняем в строчке `GRUB_TIMEOUT=` цифру ожидания в сек на желаемую
