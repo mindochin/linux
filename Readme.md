@@ -12,14 +12,22 @@ timedatectl set-local-rtc 0
 
 #### Определить, обновить драйвер на видеокарту Nvidia
 Как определило ядро
-```lspci -nn | grep VGA```
+```
+lspci -nn | grep VGA
+```
 
 Добавим репозиторий с драйверами
-```sudo add-apt-repository ppa:graphics-drivers/ppa
-sudo apt update```
+```
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+```
 
 Определение подходящих драйверов
-```sudo ubuntu-drivers devices```
+```
+sudo ubuntu-drivers devices
+```
 
-Установка (пример)
-```sudo apt install nvidia-driver-440```
+И установка (название из предыдущего пункта)
+```
+sudo apt install nvidia-driver-440
+```
