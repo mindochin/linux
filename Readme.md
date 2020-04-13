@@ -9,3 +9,17 @@ timedatectl set-local-rtc 0
 ```
 #### Изменить время выбора системы или ядра при загрузке
 ищем `/etc/default/grub` меняем в строчке `GRUB_TIMEOUT=` цифру ожидания в сек на желаемую
+
+#### Определить, обновить драйвер на видеокарту Nvidia
+Как определило ядро
+```lspci -nn | grep VGA```
+
+Добавим репозиторий с драйверами
+```sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update```
+
+Определение подходящих драйверов
+```sudo ubuntu-drivers devices```
+
+Установка (пример)
+```sudo apt install nvidia-driver-440```
