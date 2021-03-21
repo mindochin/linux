@@ -31,3 +31,18 @@ sudo ubuntu-drivers devices
 ```
 sudo apt install nvidia-driver-440
 ```
+#### Команды консоли для развертывания проекта
+
+Сменить владельца всего в текущей папке рекурсивно
+```
+chown -R fastuser:fastuser *
+```
+
+Сменить права на папки
+```
+find . -type d -exec chmod 0755 {} \;
+```
+Сменить права на файлы
+```
+find . -type f -exec chmod 0644 {} \;
+```
