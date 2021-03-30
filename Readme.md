@@ -46,3 +46,8 @@ find . -type d -exec chmod 0755 {} \;
 ```
 find . -type f -exec chmod 0644 {} \;
 ```
+
+Поиск файлов. измененных в последние 3 дня (напр. после вируса)
+```
+find /var/adm -mtime +3 -print
+```
