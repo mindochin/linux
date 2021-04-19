@@ -51,3 +51,8 @@ find . -type f -exec chmod 0644 {} \;
 ```
 find /var/adm -mtime +3 -print
 ```
+
+Архивация проекта с исключением ненужного (. - текущая папка)
+```
+tar -zcpvf archive.tar.gz --anchored --exclude=./_old --exclude=./runtime .
+```
