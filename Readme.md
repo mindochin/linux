@@ -56,3 +56,7 @@ find /var/adm -mtime +3 -print
 ```
 tar -zcpvf archive.tar.gz --anchored --exclude=./_old --exclude=./runtime .
 ```
+еще вариант
+```
+tar -zcpvf archive.tar.gz --anchored --exclude={./.git,'*/runtime/*','*/assets/*','*/uploads/*','*/web/images/*',./vendor/*,'*/temp/*',./console/images_fix,*.tgz,*.gz,*.zip,*.xls} .
+```
